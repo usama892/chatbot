@@ -13,7 +13,7 @@ from langchain.prompts import PromptTemplate
 import shutil
 
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": "*", "methods": ["GET", "POST", "DELETE", "OPTIONS"], "allow_headers": "*"}})
+CORS(app, resources={r"/*": {"origins": "*"}})
 
 # Add CORS headers to all responses
 @app.after_request
